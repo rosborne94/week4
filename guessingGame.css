@@ -1,0 +1,38 @@
+#guessBox1A {
+    width: 30%; 
+    height: 70%; 
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: fantasy;
+}
+#guessBox1B {
+    width: 30%; 
+    height: 70%; 
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: fantasy;    
+}
+#guessBox1C{
+    width: 30%; 
+    height: 70%; 
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: fantasy;
+}
+h1{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    margin: 10px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+input{
+    
+}

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Guessing Game</title>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="guessingGame.css" type="text/css" />
+</head>
+
+<body>
+    <h1>Guessing Game</h1>
+    <p>There will be a number sequence of three numbers randomly generated. The lowest the numbers will reach is 0 and the highest
+        is 9. Each box will hold a number. <br/>The player will enter a nuber into the boxes to guess the number inisde of the
+        box. If the guess is correct the box will turn green. <br/>If the guess is in the current sequence, but in a different
+        box the box will turn yellow. If the guess is incorrect the box will turn red.<br/> There will be a total of 10 tries
+        allowed. The game can be restarted once beaten or failed.</p>
+    <div class="container">
+        <div clas="row">
+            <div class="col-md-3" id="guessBox1A">
+                <div class="col-md-3 col-md-push-3" id="guessBox1"><input type="text" size="21" maxlength="1" placeholder="Enter your first guess." /></div>
+            </div>
+            <div class="col-md-3" id="guessBox1B">
+                <div class="col-md-3 col-md-push-3" id="guessBox2"><input type="text" size="22" maxlength="1" placeholder="Enter your second guess." /></div>
+            </div>
+            <div class="col-md-3" id="guessBox1C">
+                <div class="col-md-3 col-md-push-3" id="guessBox3"><input type="text" size="21" maxlength="1" placeholder="Enter your third guess." /></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-md-push-5">
+        <button type="submit" class="btn btn-warning" id="confirmBtn">Confirm Guesses</button>
+    </div>
+</body>
+
+</html>

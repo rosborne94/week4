@@ -1,0 +1,36 @@
+<div id="game">
+  <div class="row-top">
+    <p>You have <span class="try"></span> try</p>
+  </div>
+  <div class="input">
+     <input type="number" min="0" max="9" maxlength="1">
+     <input type="number" min="0" max="9" maxlength="1">
+     <input type="number" min="0" max="9" maxlength="1">
+  </div>
+  <div class="check">Check</div>
+  <div class="row-bottom">
+    <p style="float: left;">Score <span class="score"></span></p>
+    <p style="float: right;">HighScore <span class="highscore"></span></p>
+  </div>
+  <div class="help-link">Help</div>
+  
+  <div class="modal help">
+    <div class="m-row">
+       <p>This is  numbers guessing game . You have to input 3 different number from 0 to 9 , at the begin you have 10 attempts .<br>
+					        <span style="color: red;">red</span> : this number is not correct .<br>
+					        <span style="color: orange;">orange</span>  : this is correct, but in the wrong position.<br>
+					        <span style="color: green;">green</span> : this number is  correct .<br>
+            Each time you find  all the correct numbers your score will increase and you win another 4 attempts  ,
+            you lose when all your attempts finish.</p>
+    </div>
+    <p class="close-help close">Close</p>
+  </div>
+  
+  <div class="modal winlose">
+    <div class="m-row">
+       <p class="message"></p>
+       <p class="message-two"></p>
+       <p class="close-modal close"></p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Split The Bill CSS -->
+    <link rel="stylesheet" href="tipCalculator.css" />
+    <!-- Split The Bill JS -->
+    <script src="tipCalculator.js"></script>
+    <title>Split the Bill</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-push-4" id="bgstyle">
+                <h1>Split The Bill</h1>
+                <p>How much was your bill?</p>
+                <div class="bill">
+                    <input id="bill" type="text" maxlength="6" placeholder="$Bill" onkeypress="validate(event)" />
+                </div>
+                <label>How was your service?<br>
+                <select id="service">
+                    <option disabled selected value="0">-- Choose an option --</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was OK</option>
+                    <option value="0.1">10% - Poor</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+</label>
+                <label>How many people sharing the bill?<br>
+                <input id="people" type="text" maxlength="1" placeholder="#" onkeypress="validate(event)"/>
+</label>
+                <button id="calculate" type="button">Calculate</button>
+                <div id="totalTip">
+                   <strong><span>$</span><span id="tip">0.00</span> <span id="each">each</span></strong>
+                </div>
+            </div>
+
+        </div>
+
+</html>
